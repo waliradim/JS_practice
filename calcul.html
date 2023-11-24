@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let number1 = Number(prompt("Enter a number "));
+      let item = prompt("what u do +, _, *,/");
+      let number2 = Number(prompt("Enter a number "));
+      function add() {
+        let c = number1 + number2;
+        alert(number1 + " + " + number2 + "=  " + c);
+      }
+      function min() {
+        let c = number1 - number2;
+        alert(number1 + " - " + number2 + "=  " + c);
+      }
+      function milti() {
+        let c = number1 * number2;
+        console.log(number1 + " * " + number2 + "=  " + c);
+      }
+      function divd() {
+        let c = number1 / number2;
+        alert(number1 + " / " + number2 + "=  " + c);
+      }
+      switch (item) {
+        case "+":
+          add();
+          break;
+        case "-":
+          min();
+          break;
+        case "*":
+          milti();
+          break;
+        case "/":
+          divd();
+          break;
+
+        default:
+          alert("wrong inpute please Relode and input again");
+          break;
+      }
+    </script>
+  </body>
+</html>
